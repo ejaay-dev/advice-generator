@@ -24,6 +24,7 @@ export const links: LinksFunction = () => [
   },
 ]
 
+// loader -> loads data on page mount
 export const loader = async () => {
   return {
     ENV: {

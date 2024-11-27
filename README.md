@@ -1,40 +1,86 @@
-# Welcome to Remix!
+# Frontend Mentor - Advice generator app solution
 
-- 📖 [Remix docs](https://remix.run/docs)
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development
+## Table of contents
 
-Run the dev server:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
 
-```shellscript
-npm run dev
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
+
+### Screenshot
+
+![Desktop](./desktop-design.jpg)
+![Mobile](./mobile-design.jpg)
+
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+
+### Links
+
+- Solution URL: [Github Repo](https://github.com/ejaay-dev/advice-generator)
+- Live Site URL: [Site Demo](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Remix](https://remix.run/) - React framework
+- [Tailwind](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+I learned how to create a radial gradient
+
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+.gradient-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.gradient-shadow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    hsla(150, 100%, 66%, 0.6) 30%,
+    hsla(150, 100%, 66%, 0) 100%
+  );
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+.gradient-shadow:hover {
+  box-shadow: 0 0 20px 10px hsla(150, 100%, 66%, 0.6); /* Neon-green glow */
+}
 ```
 
-## Deployment
+## Author
 
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- LinkedIn - [@errolignacio](https://www.linkedin.com/in/errolignacio)
