@@ -27,15 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./desktop-design.jpg)
-![Mobile](./mobile-design.jpg)
+![Desktop](./design/desktop-design.jpg)
+![Mobile](./design/mobile-design.jpg)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/ejaay-dev/advice-generator)
-- Live Site URL: [Site Demo](https://your-live-site-url.com)
+- Live Site URL: [Site Demo](https://advice-generator-psi-red.vercel.app/)
 
 ## My process
 
