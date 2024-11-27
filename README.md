@@ -55,9 +55,6 @@ Users should be able to:
 I learned how to create a radial gradient
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
 .gradient-shadow {
   transition: box-shadow 0.3s ease;
 }
