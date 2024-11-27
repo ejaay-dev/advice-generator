@@ -9,14 +9,7 @@ import {
 import type { LinksFunction } from "@remix-run/node"
 
 import "./tailwind.css"
-
-export const loader = async () => {
-  return Response.json({
-    ENV: {
-      API_URL: process.env.API_URL,
-    },
-  })
-}
+import { env } from "./utils/env.schema"
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -30,6 +23,14 @@ export const links: LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
   },
 ]
+
+export const loader = async () => {
+  return {
+    ENV: {
+      API_URL: env().API_URL,
+    },
+  }
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const data = useLoaderData<typeof loader>()
